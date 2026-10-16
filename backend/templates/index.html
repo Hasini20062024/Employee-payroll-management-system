@@ -1,0 +1,19 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8f9fc" />
+  <title>Haven - People &amp; Payroll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{% static 'payroll/style.css' %}" />
+</head>
+<body>
+  <main id="app" aria-live="polite"></main>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script type="module" src="{% static 'payroll/main.js' %}"></script>
+</body>
+</html>
